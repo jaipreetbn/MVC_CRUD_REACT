@@ -1,0 +1,12 @@
+﻿@model IEnumerable<WebApplication5.Models.Product>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>List of Products</h2>
+<div id="productRoot"></div>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    <script src="~/Scripts/react/dist/Product.bundle.js"></script>
+}
